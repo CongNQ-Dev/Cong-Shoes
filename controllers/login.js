@@ -24,3 +24,10 @@ const login = () => {
       console.log(err);
     });
 };
+//var let const
+// khai bao moi duoc su dung
+const student = {
+  id: 1,
+  name: Cong,
+};
+student2 = [...student];

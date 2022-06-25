@@ -82,6 +82,7 @@ carousel .carousel-indicators li {
 }
 .carousel-item img {
   height: 850px;
+  overflow: hidden;
 }
 .content-table {
   flex-wrap: wrap;
@@ -271,10 +272,39 @@ path.two {
 @media screen and (max-width: 577) {
 }
 @media screen and (max-width: 767px) {
+  .cta {
+    transform: translateX(-25%);
+  }
+  .card img {
+    width: 21% !important;
+    margin: 0 auto;
+  }
 }
 /* max width: <=  */
 @media screen and (max-width: 991px) {
-  .header-brand {
-    display: none !important;
+  .btn .btn-success {
+    left: 17% !important;
+  }
+  .cta {
+    transform: translateX(-25%);
+  }
+  .card {
+    height: 15rem;
+  }
+  .card-body h6 {
+    overflow: hidden;
+  }
+  .card img {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .btn-success {
+    left: 76%;
+  }
+  .mb-lg-0,
+  .my-lg-0 {
+    position: absolute;
+    top: 0;
+    left: 100px;
   }
 }
